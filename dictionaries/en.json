@@ -1,0 +1,101 @@
+{
+  "locale": "en",
+  "brand": "A and V Group",
+  "nav": {
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Contact Us"
+  },
+  "hero": {
+    "eyebrow": "CIVIL CONSTRUCTION · ROADS · ENGINEERING INFRASTRUCTURE",
+    "headline": "Roads, buildings, infrastructure — one team",
+    "subhead": "Building trust, creating the future.",
+    "cta1": "View Projects",
+    "cta2": "Contact Us"
+  },
+  "services": {
+    "eyebrow": "SERVICES",
+    "title": "Our core service lines",
+    "subtitle": "Six service lines, one accountable team.",
+    "items": [
+      {
+        "title": "Residential & Public Buildings",
+        "description": "Multi-unit residential and public-use buildings, from planning to handover."
+      },
+      {
+        "title": "Industrial & Commercial Construction",
+        "description": "Production and commercial facilities built to fit real operational requirements."
+      },
+      {
+        "title": "Road Construction",
+        "description": "Road building, repair, and paving — urban and inter-city."
+      },
+      {
+        "title": "Water & Sewage Systems",
+        "description": "Construction, replacement, and rehabilitation of water supply and sewage networks."
+      },
+      {
+        "title": "Engineering Infrastructure",
+        "description": "Electrical, thermal, and other engineering networks delivered as part of construction projects."
+      },
+      {
+        "title": "Construction Project Management",
+        "description": "Full project oversight from planning to handover, under one accountable team."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "PROJECTS",
+    "title": "Projects that speak for themselves",
+    "subtitle": "Below are project visualizations. Detailed figures will be added once confirmed.",
+    "cardTag": "PROJECT VISUALIZATION",
+    "cardNote": "Details coming soon",
+    "cardLabel": "Project"
+  },
+  "about": {
+    "eyebrow": "ABOUT US",
+    "title": "A company you can trust",
+    "blocks": [
+      {
+        "heading": "Who we are",
+        "body": "A and V Group is a construction company operating in civil construction, road building, and engineering infrastructure."
+      },
+      {
+        "heading": "What we value",
+        "body": "We value trust, responsibility, transparent collaboration, and an individual approach to every client."
+      },
+      {
+        "heading": "How we work",
+        "body": "Our goal is to deliver quality, safe, and modern construction projects while upholding high professional standards, contractual obligations, and agreed deadlines. Our experienced team and use of modern technology let us take on projects of any complexity, ensuring high quality and long-term results."
+      },
+      {
+        "heading": "Our mission",
+        "body": "A and V Group's mission is to build reliable, lasting infrastructure that supports community development and creates long-term value."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "Let's talk about your project",
+    "subtitle": "Call or write to us to discuss your construction needs.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "phoneValue": "[PHONE NUMBER]",
+    "emailValue": "[EMAIL ADDRESS]",
+    "addressValue": "[ADDRESS]",
+    "mapNote": "Map will display once the office address is provided",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "submit": "Send"
+    }
+  },
+  "footer": {
+    "tagline": "Building trust, creating the future.",
+    "rights": "© 2026 A and V Group. All rights reserved."
+  }
+}

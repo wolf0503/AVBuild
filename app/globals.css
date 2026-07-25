@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0f1013;
+  --color-surface: #191b20;
+  --color-surface-2: #15161a;
+  --color-line: #2a2d34;
+  --color-muted: #9a9da3;
+  --color-text: #f0efea;
+  --color-accent: #f5c518;
+  --color-accent-hover: #ffd633;
+  --color-accent-deep: #d9a400;
+
+  --font-heading: var(--font-display), "Arial Narrow", sans-serif;
+  --font-body: var(--font-body-fallback), system-ui, sans-serif;
+}
+
+:root {
+  --font-body-fallback: var(--font-body-latin);
+}
+
+html[data-locale="hy"] {
+  --font-body-fallback: var(--font-body-armenian);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee-track {
+    animation: none !important;
+  }
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4,
+.font-heading {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-weight: 900; }
+h2, h3, h4 { font-weight: 700; }
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Blueprint grid texture */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--color-text) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-text) 5%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Radial accent glow used behind section headings */
+.accent-glow {
+  background: radial-gradient(
+    600px circle at var(--gx, 20%) var(--gy, 0%),
+    color-mix(in srgb, var(--color-accent) 10%, transparent),
+    transparent 70%
+  );
+}
+
+/* Oversized decorative section index number */
+.section-index {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-text) 10%, transparent);
+}
+
+/* Infinite marquee */
+.marquee-track {
+  animation: marquee 28s linear infinite;
+  min-width: 100%;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Animated underline for links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
