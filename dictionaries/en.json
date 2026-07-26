@@ -52,7 +52,18 @@
     "subtitle": "Below are project visualizations. Detailed figures will be added once confirmed.",
     "cardTag": "PROJECT VISUALIZATION",
     "cardNote": "Details coming soon",
-    "cardLabel": "Project"
+    "cardLabel": "Project",
+    "status": {
+      "completed": "Completed",
+      "ongoing": "In progress"
+    },
+    "gallery": {
+      "view": "View gallery",
+      "renders": "renders",
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    }
   },
   "about": {
     "eyebrow": "ABOUT US",
